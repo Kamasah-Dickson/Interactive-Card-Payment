@@ -1,0 +1,38 @@
+@use "../utils/" as u;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.background {
+	position: absolute;
+	inset: 0;
+}
+
+.small {
+	background-image: url("/src/images/bg-main-mobile.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: u.rem(200);
+	width: 100%;
+}
+
+.large {
+	background-image: url("/src/images/bg-main-desktop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	width: 35%;
+}
+
+img {
+	height: auto;
+	display: block;
+}
